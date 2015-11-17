@@ -1,5 +1,5 @@
 {
-    "name": "saffyre/template",
+    "name": "saffyre/templates",
     "description": "A simple template engine: standard php syntax + templating niceties.",
     "keywords": ["template", "engine", "master"],
     "license": "MIT",
