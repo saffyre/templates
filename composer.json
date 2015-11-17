@@ -1,0 +1,19 @@
+{
+    "name": "saffyre/template",
+    "description": "A simple template engine: standard php syntax + templating niceties.",
+    "keywords": ["template", "engine", "master"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Brombal",
+            "email": "alex.brombal@gmail.com",
+            "homepage": "http://www.hirealex.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Saffyre\\": ["src/"]
+        }
+    }
+}
