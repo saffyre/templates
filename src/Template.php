@@ -170,7 +170,7 @@ class Template
             return true;
 
         // Read the json data in the cached file; if the file modification time matches, just return the cached data
-        $data = json_decode(file_get_contents($file) ?: '', JSON_OBJECT_AS_ARRAY);
+        $data = json_decode(file_exists($file) ? file_get_contents($file) : '', JSON_OBJECT_AS_ARRAY);
         if ($data && $data['mtime'] == filemtime(str_replace(self::$cacheDir, '', $file)))
         {
             $checked[] = $file;
